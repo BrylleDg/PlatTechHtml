@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --text-color:#fff;
+    --bg-color: rgb(5,9,31);
+    --main-color: rgb(3,119,227);
+    --other-color: #b5b9bf;
+    --h1-font: 4.5rem;
+    --h2-font: 2.9rem;
+    --p-font: 1rem;
+}
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0xpx 16%;
+    background: var(--bg-color);
+    transition: all .50s ease;
+}
+
+.logo-pic{
+    width: 150px;
+    height: 10vh;
+    margin-left: 90px;
+}
+
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    font-size: var(--p-font);
+    font-weight: 750;
+    color: var(--text-color);
+    margin-left: 40px;
+    transition: all .50s ease;
+}
+.navlist a:hover{
+    padding: 10px;
+    color: var(--main-color);
+}
+#menu-icons{
+    font-size: 35px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+.h-btn{
+    display: inline-block;
+    padding: 11px 11px;
+    background: transparent;
+    color: var(--text-color);
+    border: 4px solid var(--other-color);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .50s ease;
+    margin-right: 90px;
+}
+.h-btn:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px var(--main-color);
+    transform: scale(1.1);
+}
+section{
+    padding: 110px 10% 90px;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(./img/mond-gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero2{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(./img/liyue-ezgif.com-video-to-gif-converter.gif);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero3{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(./img/loading-ezgif.com-video-to-gif-converter\ \(1\).gif);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero4{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(./img/inazuma-ezgif.com-video-to-gif-converter.gif);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero5{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(./img/sumeru-ezgif.com-video-to-gif-converter.gif);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero6{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(./img/fontaine-ezgif.com-video-to-gif-converter.gif);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-content{
+    font-size: 1.4rem;
+}
+.main-content h1{
+    font-size: var(--h1-font);
+    font-weight: 800;
+    margin: 20px 0px 20px;
+    line-height: 1.3;
+    color: var(--text-color);
+}
+.main-content p{
+    font-size: var(--p-font);
+    font-weight: 600;
+    width: 620px;
+    max-width: 100%;
+    color: var(--other-color);
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+
+.card{
+    width: 300px;
+    height: 190px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: 10px 10px;
+    border: 3.5px solid var(--main-color);
+    
+}
+
+.card-iframe{
+    width: 560px;
+    height: 315px;
+    border-radius: 50px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    transition: transform 0.5s;
+}
+
+.card-iframe:hover{
+    transform: scale(1.02);
+}
+
+.card-venti{
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    border: 3.5px solid #3e9f85;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./img/Venti_Card.jpg);
+    transition: transform 0.5s;
+}
+.card-venti:hover{
+    transform: scale(1.05);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px #3e9f85;
+}
+
+.card-Zhongli{
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    border: 3.5px solid #e8c660;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./img/Zhongli_Card.jpg);
+    transition: transform 0.5s;
+}
+.card-Zhongli:hover{
+    transform: scale(1.05);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px #e8c660;
+}
+
+.card-Raiden{
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    border: 3.5px solid #6333ae;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./img/Raiden_Shogun_Card.jpg);
+    transition: transform 0.5s;
+}
+.card-Raiden:hover{
+    transform: scale(1.05);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px #6333ae;
+}
+
+.card-Nahida{
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    border: 3.5px solid #bacd84;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./img/Nahida_Card.jpg);
+    transition: transform 0.5s;
+}
+.card-Nahida:hover{
+    transform: scale(1.05);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px #bacd84;
+}
+
+.card-Furina{
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    border: 3.5px solid #2d4286;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./img/Furina_Card.jpg);
+    transition: transform 0.5s;
+}
+.card-Furina:hover{
+    transform: scale(1.05);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px #2d4286;
+}
+
+.medsos{
+    margin-bottom: 40px;
+}
+
+.medsos i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--text-color);
+    border: 3.5px solid var(--main-color);
+    border-radius: 50%;
+    backdrop-filter: brightness(88%);
+    font-size: 20px;
+    margin-right: 17px;
+    box-shadow: 0 0 20px transparent;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+.medsos i:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--main-color);
+}
+.btn {
+    display: inline-block;
+    padding: 11px 26px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .50s ease;
+}
+.btn:hover{
+    background: transparent;
+    color: var(--text-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+.btn2{
+    background: transparent;
+    color: var(--text-color);
+    border: 3px solid var(--main-color);
+    margin-left: 15px;
+    transition: all .50s ease;
+}
+.btn2:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+.iframe-container {
+    position: relative;
+    max-width: 100%;
+    padding-bottom: 56.25%;
+    max-height: 100%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
